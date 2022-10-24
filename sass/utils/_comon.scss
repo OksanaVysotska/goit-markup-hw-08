@@ -1,0 +1,32 @@
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.71;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.hiden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
