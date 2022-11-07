@@ -1,24 +1,41 @@
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 
+.section {
     &__title {
         color: var(--title-text-color);
         margin-bottom: 10px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
 
 .title {
     font-weight: 700;
-    font-size: 36px;
     text-align: center;
-    line-height: 1.16;
-    margin-bottom: 50px;
+
+    @media screen and (min-width: 480px) {
+        font-size: 28px;
+        line-height: 1.17;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+    }
 }
 
-
-.list .section__title {
+.list .section__title {  
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -28,26 +45,59 @@
 .features-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+}
 
-    &__wrapper {
-        width: 270px;
+.features-list__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: var(--secondary-background-color);
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
         height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
-        border-radius: 4px;
-        background-color: var(--secondary-background-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 120px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+         height: 120px;
     }
 }
 
+.features-list__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
 
 .features-list__item {
-    width: 270px;
-    margin-right: 30px;
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) /2);
+    
+    }
 
-    &:nth-child(4n) {
-    margin-right: 0;
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) /4);
     }
 }
+
+// .features-list__item {//     
+//     @media screen and (min-width: 480px) {
+//         width: 450px;
+//         // &:not(:last-child) {
+//         //     margin-bottom: 30px;}
+   
+
+
+
+
+
 

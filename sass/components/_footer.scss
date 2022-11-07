@@ -3,10 +3,44 @@
     background-color: var(--footer-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
 
-    &__container {
-        display: flex;
-        align-items: baseline;
+    .footer-page__container {
+               
+        @media screen and (max-width: 1199px) {
+           text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+        }
+    }
+
+.footer-wrapper {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+}
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: center;
+    }
+}
+  
+
+.location,
+.footer-box {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;       
+     }
+}
+
+.footer-logo {
+    @media screen and (max-width: 1199px) {
+        text-align: center;       
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 165px;
     }
 }
 
@@ -18,7 +52,6 @@
     }
 }
 
-
 .footer-logo {
     color: var(--white-text-color);
     font-family: Raleway, sans-serif;
@@ -26,15 +59,18 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    margin-bottom: 20px;
 }
 
 .location {
+    font-family: 'Roboto';
+    font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    margin-top: 20px;
 }
 
 .location__link {
@@ -57,9 +93,12 @@
 
 
 
-.footer-box {
-    margin-left: 70px;
+@media screen and (min-width: 1200px) {
+    .footer-box {
+     margin-left: 70px;
+    }
 }
+
 
 .footer-box .footer-box__text {
     font-weight: 700;
@@ -73,8 +112,11 @@
 
 .footer-box__list {
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+    @media screen and (max-width: 767px) {
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .soc-networks__items:not(:last-child) {
@@ -105,15 +147,20 @@
 }
 
 .subscribe__form {
-    margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 60px;
+    }
 }
 
+
 .subscribe__input {
-    width: 358px;
     height: 50px;
     border-radius: 4px;
     margin-top: 20px;
-    margin-right: 12px;
+    
     padding-left: 16px;
     padding-right: 16px;
     font-size: 16px;
@@ -121,6 +168,24 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: rgba(255, 255, 255, 0.6);
     background-color: var(--footer-background-color);
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+        width: 358px;
+    }
+}
+
+
+ @media screen and (min-width: 1200px) {
+    .subscribe {
+    display: flex;
+    align-items: flex-end;
+}
 }
 
 .subscribe__text {
@@ -133,10 +198,6 @@
     color: var(--white-text-color);
 }
 
-.subscribe {
-    display: flex;
-    align-items: flex-end;
-}
 
 .button__icon-send{
     margin-left: 10px;

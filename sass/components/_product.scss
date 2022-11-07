@@ -1,4 +1,11 @@
 
+
+.section.examples{
+    @media screen and (max-width: 1199.98px) {
+        display: none;        
+    }
+}
+
 .examples {
     padding-top: 0;
 
@@ -7,7 +14,6 @@
         flex-wrap: wrap;
     }
 }
-
 
 .examples-list__items {
     width: 370px;
