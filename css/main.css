@@ -1477,6 +1477,8 @@ body.modal-open {
     cursor: pointer;
     border: none;
     outline: none;
+    display: block;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) {
