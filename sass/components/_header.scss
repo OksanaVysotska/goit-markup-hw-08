@@ -9,7 +9,6 @@
         display: flex;
         align-items: center;
     }
-
 }
 
  .page-header__nav{
@@ -18,9 +17,8 @@
         align-items: center;
         justify-content: space-between;
         min-height: 60px;
-    
-     }
-    }        
+    }
+}        
 
 .logo {    
     color: var(--logo-text-color);
@@ -131,7 +129,6 @@
     .contacts-list__link {
         font-size: 12px;
             line-height: 1.16;
-
     }
  }
 
