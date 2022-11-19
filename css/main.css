@@ -1795,13 +1795,14 @@ body.modal-open {
   padding-left: 40px;
   padding-right: 40px;
   background-color: #ffffff;
-  z-index: 999;
+  z-index: 50;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  overflow-y: auto;
 }
 
 body.scroll-lock {
@@ -1837,6 +1838,7 @@ body.scroll-lock {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  gap: 20px;
 }
 
 .mobile-menu {
